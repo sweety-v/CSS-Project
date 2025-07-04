@@ -1,0 +1,933 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  height: 100%;
+  background-image: url('../images/download.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+
+}
+
+nav {
+  display: flex;
+  padding: 1% 2%;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+nav img {
+  width: 100px;
+  height: auto;
+
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding-top: 20px;
+  padding-left: 23px;
+  padding-bottom: 30px;
+  position: relative;
+
+
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: 'Cal Sans';
+  font-size: 13px;
+  letter-spacing: 1px;
+
+  display: flex;
+  display: inline-block;
+
+}
+
+.nav-links ul li i {
+  font-family: 'simple-line-icons';
+  display: flex;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: aliceblue;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+
+}
+
+
+.restaurant {
+  z-index: 5;
+  font-size: 111px;
+  font-style: italic;
+  font-weight: 400;
+  height: auto;
+  width: auto;
+  font-family: 'Cormorant Upright';
+  letter-spacing: 0px;
+  line-height: 100px;
+  text-align: center;
+  transform-origin: 50% 50%;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  text-align: inherit;
+  white-space: nowrap;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: slidein;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateX(-300%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+.dishes {
+  font-size: 111px;
+  font-style: italic;
+  font-weight: 400;
+  font-family: 'Cormorant Upright';
+  letter-spacing: 0px;
+  line-height: 100px;
+  text-align: center;
+  transform-origin: 50% 50%;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  text-align: inherit;
+  transform: translate(-50%, -50%);
+  animation-name: slideout;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideout {
+  0% {
+    transform: translateX(300%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.quality {
+  z-index: 7;
+  font-family: 'Anek Bangla';
+  font-size: 1 px;
+
+  color: rgb(231, 231, 224);
+  text-decoration: none;
+  white-space: nowrap;
+  min-height: 0px;
+  min-width: 0px;
+
+  text-align: inherit;
+  line-height: 4px;
+  letter-spacing: 2px;
+  font-weight: 500;
+
+  font-size: 13px;
+  top: 40%;
+  left: 48%;
+  transform-origin: 50% 50%;
+  transform: translate(0px, 0px);
+  opacity: 1;
+  position: absolute;
+  visibility: visible;
+  animation: blink 5s linear;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+.premium {
+
+  font-family: 'Sacramento';
+  font-size: 22px;
+  color: rgb(250, 255, 108);
+  text-align: inherit;
+  line-height: 4px;
+  font-weight: 200;
+  font-size: 55px;
+  filter: none;
+  transform: translate(0px, 0px);
+  opacity: 1;
+  visibility: visible;
+  top: 30%;
+  left: 42%;
+  position: absolute;
+  animation: blink 5s linear;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+.lemon {
+  position:absolute;
+  height: 36px;
+  top: 29.1%;
+  left: 50.4%;
+visibility: visible;
+  animation: bounce 2s linear;
+  transform: translateX(0);
+  animation-delay: 5s;
+
+}
+
+
+
+@keyframes bounce {
+  
+20%,
+  50%,
+  80%,
+  to {
+   
+    transform: translateY(0);
+  }
+
+  40% {
+   
+    transform: translateY(-30px);
+  }
+
+  70% {
+
+    transform: translateY(-15px);
+  }
+
+  90% {
+    transform: translateY(-4px)
+  }
+}
+.offer-conrainer{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.offers {
+  width: 100%; /* change from min-width: 100vw */
+  overflow-x: hidden;
+  padding-top: 100px;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url('https://jevelin.shufflehound.com/foodie/wp-content/uploads/sites/17/2018/01/Always-fresh2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-family: "Cormorant Garamond";
+  color: #3e3e3e;
+  font-weight: 500;
+  font-size: 40px;
+  transform: translateY(0px);
+ 
+}
+
+
+
+.sub-heading {
+  color: #a6a6a6;
+  font-family: 'Montserrat';
+  font-weight: 0;
+  font-size: 15px;
+  margin-top: -20px;
+  position: relative;
+
+}
+
+.row {
+  position: relative;
+  display: flex;
+  top: 50%;
+
+}
+
+.offer-box {
+  flex-basis: 33%;
+  padding: 30px 15px;
+  position: relative;
+}
+
+.offer-box img {
+  position: relative;
+  top: 10%;
+overflow: hidden;
+}
+
+
+.offer-box h3 {
+  font-family: "Cormorant Garamond";
+  text-align: center;
+  position: relative;
+  font-style: italic;
+  color: #3e3e3e;
+  margin: 100px 0px 20px 0px;
+  word-spacing: 1px;
+  font-size: 32px;
+  font-weight: 100;
+
+}
+
+
+.offers  em {
+  font-style: italic;
+  font-weight: bold;
+ 
+    font-size: 3vw; /* Responsive based on viewport width */
+  word-spacing: 3px;
+  position: relative;
+}
+
+.offer-box p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 0;
+  font-family: "Montserrat";
+  color: #a6a6a6;
+  line-height: 25px;
+  margin: 35px;
+  position: relative;
+  top: 1%;
+
+}
+
+.welcome-container{
+  display: flex;
+  width: 100%;
+ 
+}
+.welcome img{
+  
+height: 100%; 
+  height: auto;
+  display: block;
+margin-left: -20%;
+margin-top: 10%;
+}
+
+
+.welcome-letter h1{
+       font-family: "sacramento";
+    font-weight: 900;
+    line-height: 0.1px !important;
+   font-size: 270px;
+    color: #f0f0f0;
+   
+   
+}
+  
+
+  .welcome-letter {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+.welcome-box {
+  font-weight: 0;
+  font-size: 30px;
+  display: inline;
+  justify-content: center;
+  margin-top: 10%;
+
+  padding: 10px;
+ 
+  font-family: 'Cormorant Upright';
+}
+
+.welcome-box h3 {
+  position: relative;
+ font-family: 'Cormorant Upright';
+  color: #3e3e3e;
+  font-size: 30px;
+  padding: 0;
+ margin-top:-140px ;
+  font-weight: lighter;
+  font-style: italic;
+}
+.welcome-box p{
+ color: #a6a6a6;
+  font-family: 'Montserrat';
+  font-weight: 0;
+  font-size: 13px;
+  line-height: 25px;
+   padding-top: 30px;
+  padding-bottom: 40px;
+  position: relative;
+
+}
+.welcome-box a{
+  position: relative;
+ text-decoration: none;
+ font-size: small;
+
+ font-family: "Montserrat";
+    color: #646464;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+}
+.welcome-box a :hover{
+  color: chocolate;
+}
+.chef-container{
+display: flex;
+width: 100%;
+
+margin-top: 5%;
+margin-bottom: 5%;
+}
+.chef-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 10%;
+  min-height: 100vh;
+}
+.chef-content h1 {
+  font-family: 'sacramento';
+  font-style: italic;
+  font-size: 500px;
+  line-height: 0.1px !important;
+  font-weight: 700 !important;
+  color: #f0f0f0;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+  margin-right: 19%;
+  position:relative;
+
+}
+.chef-image{
+  flex:1;
+  overflow:hidden;
+
+}
+.chef-image img{
+   width: 100%;
+   height: 100%;
+  object-fit: cover;
+ 
+}
+
+.chef-content {
+  font-weight: 0;
+  font-size: 30px;
+  margin-top: 10%;
+
+    width: 50%;
+ padding-right: 10%;
+ font-family: "Cormorant Garamond";
+ text-align: right;
+
+}
+
+.chef-content h3 {
+  position:relative;
+ font-family: 'Cormorant Upright';
+  color: #3e3e3e;
+  font-size: 30px;
+ margin-top: -40%;
+
+  font-weight: lighter;
+  font-style: italic;
+  
+}
+.chef-content p{
+ color: #a6a6a6;
+  font-family: 'Montserrat';
+  font-weight: 0;
+  font-size: 13px;
+  line-height: 25px;
+  
+  padding-bottom: 40px;
+  position: relative;
+ 
+
+}
+.chef-content a{
+  position: relative;
+ text-decoration: none;
+ font-size: small;
+ font-family: "Montserrat";
+    color: #646464;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+   
+     
+}
+.chef-content a :hover{
+  color: chocolate;
+   
+}
+
+
+
+i{
+  font-style: italic;
+ 
+}
+.team{
+background-color: #f5f5f5;
+  margin: 0;
+  padding: 50px;
+}
+.team-section{
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:50px;
+   text-align: center;
+}
+
+.team-member{
+  width:250px;
+ cursor: pointer;
+
+}
+.team-member h3{
+  color: #3e3e3e;
+  font-family: "Cormorant Garamond";
+  margin-bottom: 7px;
+  font-size: 15px;
+}
+.team-member h4{
+  color: #a6a6a6;
+  font-family: "Montserrat";
+  font-weight: lighter;
+  font-size: 22px;
+  margin-bottom:7px ;
+}
+.team-member p{
+  color: #a6a6a6;
+    font-family: 'Montserrat';
+    font-weight: 0;
+    font-size: 13px;
+    line-height: 20px;
+    
+    padding-bottom: 40px;
+    position: relative;
+}
+
+
+.background-top {
+  background: url('https://jevelin.shufflehound.com/foodie/wp-content/uploads/sites/17/2018/01/brooke-lark-385490.jpg') no-repeat center top;
+  background-size: cover;
+  height: 300px;
+}
+
+.background-bottom {
+  background: url('https://jevelin.shufflehound.com/foodie/wp-content/uploads/sites/17/2018/01/Layer-0-copy-3.png') no-repeat center bottom;
+  background-size: cover;
+  height: 400px;
+  background-position: 80% 100%;
+    background-color: transparent;
+}
+
+.menu-card {
+  background-color: #fff;
+  max-width: 1100px;
+  
+  margin: -150px auto 0 auto;
+  padding: 50px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo h1 {
+  font-family: "Cormorant Garamond";
+  font-size: 40px;
+  font-weight: 700;
+     color: #3e3e3e;
+  margin: 10px 0 5px;
+}
+
+.logo p {
+  font-family: 'Montserrat';
+  font-size: 13px;
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.column {
+  width: 45%;
+}
+
+.column h3 {
+  font-family: "Cormorant Garamond";
+  font-weight: lighter;
+  font-size: 34px;
+  color: #f2711c;
+  margin-bottom: 80px;
+}
+
+.item {
+  margin-bottom: 80px;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 10px;
+}
+
+.title {
+  font-family: "Montserrat";
+      color: #646464;
+  display: flex;
+  justify-content: space-between;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.item p {
+  font-family: "Montserrat";
+  font-size: 14px;
+  padding-right: 80px;
+  font-weight: lighter;
+  color: #8d8d8d;
+  font-style: italic;
+  line-height: 28px;
+}
+
+.menu-button {
+  margin-top: 30px;
+  padding: 10px 25px;
+  border: 1px solid #000;
+  background: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.menu-button:hover{
+  color: #f2711c;
+cursor: pointer;
+
+}
+  .customer-container {
+      background: #fff;
+      padding: 60px 40px;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 700px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+
+.testimonial-section {
+  text-align: center;
+  padding: 80px 20px;
+  margin-top: -15%;
+}
+
+.testimonial-section h2 {
+  font-family: "Cormorant Garamond";
+  font-size: 40px;
+      color: #3e3e3e;
+  font-weight: 600;
+  margin: 0;
+}
+
+.sub-title {
+  font-size: 14px;
+  color: #888;
+  margin: 8px 0 40px;
+  position: relative;
+}
+
+.sub-title::before,
+.sub-title::after {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 1px;
+  background: #ccc;
+  vertical-align: middle;
+  margin: 0 12px;
+}
+
+.testimonial-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.arrow {
+  font-size: 24px;
+  color: #888;
+  cursor: pointer;
+  user-select: none;
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-box {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.text {
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.testimonial-box h4 {
+  font-family: "Cormorant Garamond";
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.role {
+  font-family: "Cormorant Garamond";
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.rating {
+  font-family: "Monsterrat";
+  font-size: 22px;
+  color: #444;
+  font-weight: 500;
+}
+ 
+.booking-container {
+    background: url('https://jevelin.shufflehound.com/foodie/wp-content/uploads/sites/17/2018/01/brooke-lark-385504.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;  
+}
+
+.booking-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  max-width: 1100px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+.booking-card h2 {
+  font-family: "Cormorant Garamond";
+      color: #3e3e3e;
+  margin: 0;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.sub-text {
+  font-family: "Montserrat";
+  margin: 10px 0 40px;
+     color: #a6a6a6;
+  font-size: 14px;
+  position: relative;
+  font-weight: lighter;
+}
+
+.sub-text::before,
+.sub-text::after {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 1px;
+  background: #ccc;
+  margin: 0 14px;
+  vertical-align: middle;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 18px;
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  outline: none;
+}
+
+.book-now a{
+  text-decoration: none;
+  color: #646464;
+ font-family: "Montserrat";
+ font-weight: bolder;
+ font-size: 14px;
+} 
+.book-now a:hover{
+  cursor: pointer;
+  color: #ccc;
+}
+.contact-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 150px 0px 0px 150px;
+  height: 100vh;
+}
+.contact-card{
+  width: 40%;
+}
+.contact-card h2{
+  font-family: "Cormorant Garamond";
+  font-style:italic;
+  color: #3e3e3e;
+  font-size:33px;
+  font-weight: lighter;
+  margin-bottom: 100px;
+  margin-left: 120px;
+}
+.timing{
+      font-family: "Montserrat";
+        font-weight: bolder;
+        font-size: 15px;
+       display: flex;
+       justify-content: space-between;
+       border-bottom:1px solid #ccc;
+       padding-bottom: 30px;
+      
+}
+.address{
+
+ font-size: small;
+  line-height: 1.6;
+  font-family: "Montserrat";
+  margin-left: 140px;
+
+}
+.map-area{
+  width:55%;
+  height: 100vh;
+   margin-top: -150px;
+  
+}
+.iframe{
+ 
+ width: 100%;
+  height: 100%;
+
+}
+.pin{
+  position: absolute;
+  width:40px;
+  top:30%;
+  left:50%;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: white;
+  padding: 70px 40px;
+}
+.footer-center{
+ font-family: "Montserrat";
+ font-weight: lighter;
+    word-spacing: 1px;
+     font-size: 14px;
+}
+.font-right i{
+margin-left: 20px;
+font-size: 18px;
+cursor: pointer;
+padding: 50px 0px 50px 0px;
+}
+
+
